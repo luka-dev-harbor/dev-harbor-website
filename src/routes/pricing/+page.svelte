@@ -1,16 +1,16 @@
+<script>
+    import Header from "$lib/components/Header.svelte";
+</script>
+
 <svelte:head>
-    <title>Dev Harbor — Custom Web Development</title>
+    <title>Pricing — Dev Harbor</title>
     <meta name="description" content="We craft modern, fast, and beautiful websites for your business." />
-    <meta property="og:title" content="Dev Harbor — Custom Web Development" />
+    <meta property="og:title" content="Dev Harbor — Blog" />
     <meta property="og:description" content="We craft modern, fast, and beautiful websites for your business." />
     <meta property="og:image" content="/og-image.png" />
     <link rel="canonical" href="https://dev-harbor.com/" />
 </svelte:head>
 
-<div class="page-content">
-    <h1 class="text-center">Welcome to Dev Harbor</h1>
-</div>
+<Header></Header>
 
-<style>
-
-</style>
+<h1 class="text-center">Pricing</h1>
