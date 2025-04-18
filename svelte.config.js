@@ -13,7 +13,6 @@ const config = {
 		paths: {
 			base: dev ? '' : '/dev-harbor-website'
 		},
-		trailingSlash: 'always'
 	},
 	preprocess: vitePreprocess()
 };
