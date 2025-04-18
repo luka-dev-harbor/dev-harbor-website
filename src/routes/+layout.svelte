@@ -5,14 +5,21 @@
 
 <Header></Header>
 
-<div class="page-content">
-    <slot />
+<div class="page-wrapper">
+    <div class="page-content">
+        <slot />
+    </div>
 </div>
 
 <style>
-    .page-content {
-        margin-top: 100px;
-        padding: 40px 80px;
-        min-height: calc(100vh - 100px);
+    .page-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .page-content {
+            margin-top: 100px;
+            min-height: calc(100vh - 100px);
+            max-width: 2000px;
+        }
     }
 </style>
