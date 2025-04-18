@@ -56,9 +56,10 @@
     /* LARGE MENU STYLE (on larger screens) */
     @media (min-width: 768px) {
         .navbar {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(0, 0, 0, 0.2);
             -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
+            mix-blend-mode: difference;
 
             .navbar-toggler {
                 display: none !important;
@@ -72,7 +73,7 @@
 
                     .nav-item {
                         a {
-                            color: #000 !important;
+                            color: #fff !important;
                             opacity: 0.6;
                             padding-left: 1rem;
                             padding-right: 1rem;
