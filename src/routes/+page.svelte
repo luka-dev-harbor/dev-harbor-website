@@ -27,7 +27,7 @@
     <div class="text-center mt-4">
         <button class="btn btn-primary">Get started today</button>
     </div>
-    <img src="/hero-image.svg" class="hero-image" alt="Hero image">
+    <img src="/hero-image.svg" class="hero-image" alt="Hero">
 
     <!-- WAVE -->
 <!--    <HeroGradientWave></HeroGradientWave>-->

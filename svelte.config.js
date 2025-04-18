@@ -10,9 +10,10 @@ const config = {
 			assets: 'build',
 			fallback: 'index.html'
 		}),
-		// paths: {
-		// 	base: dev ? '' : '/dev-harbor-website'
-		// }
+		paths: {
+			base: dev ? '' : 'https://luka-dev-harbor.github.io/dev-harbor-website/'
+			// TODO: change to https://dev-harbor.com/ once live
+		}
 	},
 	preprocess: vitePreprocess()
 };
