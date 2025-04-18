@@ -87,7 +87,7 @@
                 box-shadow: none;
             }
             &:hover {
-                background-image: linear-gradient(315deg, #000000 50%, #232323 50%);
+                background-image: linear-gradient(315deg, #000000 50%, #282828 50%);
             }
         }
     }

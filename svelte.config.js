@@ -11,8 +11,8 @@ const config = {
 			fallback: 'index.html'
 		}),
 		paths: {
-			base: dev ? '' : 'https://luka-dev-harbor.github.io/dev-harbor-website/'
-			// TODO: change to https://dev-harbor.com/ once live
+			base: dev ? '' : 'https://luka-dev-harbor.github.io/dev-harbor-website'
+			// TODO: change to https://dev-harbor.com once live
 		}
 	},
 	preprocess: vitePreprocess()
