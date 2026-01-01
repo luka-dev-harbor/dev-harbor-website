@@ -7,10 +7,15 @@
 <style>
     .badge {
         font-family: "Chivo Mono", monospace;
-        background-color: #333;
+        background-color: #1a1a1a;
         color: #fff;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 10px;
-        padding: 0.5rem 0.75rem;
+        padding: 0.4rem 0.75rem;
+        letter-spacing: 0.1em;
+        border-radius: 4px;
+        display: inline-block;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
     }
 </style>
