@@ -19,7 +19,7 @@
         .page-content {
             margin-top: 100px;
             min-height: calc(100vh - 100px);
-            max-width: 2000px;
+            width: 100%;
         }
     }
 </style>
