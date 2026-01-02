@@ -133,7 +133,7 @@
     <!------------->
     <!-- EXPERTISE -->
     <!------------->
-    <div class="black-box">
+    <div class="black-box pb-3">
         <div class="content-wrapper">
             <h1>Expertise</h1>
             <div class="expertise-grid">
@@ -333,7 +333,7 @@
 
     /* Black Box Section */
     .black-box {
-        padding: 60px 0 80px;
+        padding: 60px 0 150px;
         text-align: center;
 
         h1 {
@@ -353,8 +353,7 @@
 
         .clients-logos {
             width: 100%;
-            max-width: 900px;
-            margin: 1.5rem auto 0;
+            max-width: 2000px;
         }
 
         .values-section {
@@ -367,7 +366,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
         }
     }
