@@ -144,6 +144,7 @@
     <!------------->
     <div class="black-box pb-3">
         <div class="content-wrapper">
+            <Badge text={'PROFESSIONAL'}></Badge>
             <h1>Expertise</h1>
             <div class="expertise-grid">
                 <div class="expertise-card">
@@ -173,19 +174,24 @@
             <!-- TECHNOLOGIES -->
             <!--------------->
             <div class="technologies-section">
-                <div class="tech-grid">
-                    <img src="/logo-js.svg" class="tech-logo" alt="JavaScript">
-                    <img src="/logo-ts.svg" class="tech-logo" alt="TypeScript">
+                <div class="tech-row">
+                    <img src="/logo-angular.svg" class="tech-logo logo-tall" alt="Angular">
                     <img src="/logo-svelte.svg" class="tech-logo" alt="Svelte">
-                    <img src="/logo-angular.svg" class="tech-logo" alt="Angular">
-                    <img src="/logo-node.svg" class="tech-logo" alt="Node.js">
-                    <img src="/logo-net.svg" class="tech-logo" alt=".NET">
-                    <img src="/logo-pg.svg" class="tech-logo" alt="PostgreSQL">
-                    <img src="/logo-docker.svg" class="tech-logo" alt="Docker">
-                    <img src="/logo-azure.svg" class="tech-logo" alt="Azure">
-                    <img src="/logo-gcloud.svg" class="tech-logo" alt="Google Cloud">
+                    <img src="/logo-js.svg" class="tech-logo" alt="JavaScript">
                     <img src="/logo-swift.svg" class="tech-logo" alt="Swift">
+                    <img src="/logo-pg.svg" class="tech-logo logo-tall" alt="PostgreSQL">
+                    <img src="/logo-ngrx.svg" class="tech-logo" alt="NgRx">
+                    <img src="/logo-docker.svg" class="tech-logo logo-wide" alt="Docker">
+                    <img src="/logo-net.svg" class="tech-logo" alt=".NET">
+                </div>
+                <div class="tech-row tech-row-offset">
+                    <img src="/logo-azure.svg" class="tech-logo" alt="Azure">
+                    <img src="/logo-material.svg" class="tech-logo" alt="Material">
                     <img src="/logo-bootstrap.svg" class="tech-logo" alt="Bootstrap">
+                    <img src="/logo-node.svg" class="tech-logo logo-wide" alt="Node.js">
+                    <img src="/logo-hugo.svg" class="tech-logo" alt="Hugo">
+                    <img src="/logo-ts.svg" class="tech-logo" alt="TypeScript">
+                    <img src="/logo-gcloud.svg" class="tech-logo" alt="Google Cloud">
                 </div>
             </div>
 
@@ -193,6 +199,7 @@
             <!-- BASIC CONTRACT OPTIONS -->
             <!---------------------------->
             <div class="pricing-section">
+                <Badge text={'PRICING'}></Badge>
                 <h1>Basic Contract Options</h1>
                 <div class="pricing-grid">
                     <div class="pricing-card">
@@ -263,8 +270,8 @@
         <div class="content-wrapper">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <Badge text={'CONTACT US'}></Badge>
-                    <h2>Contact Us</h2>
+                    <Badge text={'BOOK A MEETING'}></Badge>
+                    <h2 class="mt-0">Contact Us</h2>
                     <p class="contact-item">
                         <strong>Address:</strong><br>
                         123 Harbor Street<br>
@@ -441,9 +448,9 @@
             margin: 0 auto 1.25rem;
 
             .icon {
-                width: 48px;
-                height: 48px;
-                background-size: 48px !important;
+                width: 58px;
+                height: 58px;
+                background-size: 58px !important;
                 filter: brightness(0);
             }
         }
@@ -470,25 +477,36 @@
         margin-top: 3rem;
         padding: 2rem 0;
 
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 2rem 1.5rem;
-            max-width: 720px;
-            margin: 0 auto;
+        .tech-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
             align-items: center;
-            justify-items: center;
+        }
+
+        .tech-row-offset {
+            padding-left: 3.5rem;
         }
 
         .tech-logo {
-            max-width: 60px;
-            max-height: 40px;
+            height: 70px;
+            width: auto;
+            object-fit: contain;
             opacity: 0.85;
             transition: opacity 0.3s, transform 0.2s;
 
             &:hover {
                 opacity: 1;
                 transform: scale(1.05);
+            }
+
+            &.logo-wide {
+                height: 55px;
+            }
+
+            &.logo-tall {
+                height: 80px;
             }
         }
     }
@@ -698,8 +716,12 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .technologies-section .tech-grid {
-            grid-template-columns: repeat(4, 1fr);
+        .technologies-section .tech-row {
+            gap: 1.5rem;
+        }
+
+        .technologies-section .tech-row-offset {
+            padding-left: 1.5rem;
         }
 
         .contact-section .contact-grid {
@@ -739,13 +761,18 @@
             margin: 0 auto;
         }
 
-        .technologies-section .tech-grid {
-            grid-template-columns: repeat(3, 1fr);
+        .technologies-section .tech-row {
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .technologies-section .tech-row-offset {
+            padding-left: 0;
         }
 
         .technologies-section .tech-logo {
-            max-width: 50px;
-            max-height: 34px;
+            width: 40px;
+            height: 40px;
         }
 
         .quote-section {
@@ -768,8 +795,9 @@
 
     /* Responsive: Small mobile (max 480px) */
     @media (max-width: 480px) {
-        .technologies-section .tech-grid {
-            grid-template-columns: repeat(2, 1fr);
+        .technologies-section .tech-logo {
+            width: 32px;
+            height: 32px;
         }
     }
 </style>
