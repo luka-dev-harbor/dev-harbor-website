@@ -76,10 +76,13 @@
     <!-------------------------------->
     <!-- CUSTOM SOFTWARE DEVELOPMENT -->
     <!-------------------------------->
-    <div class="white-section">
+    <div class="white-section mt-5">
         <div class="content-wrapper">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="text-start">
+                        <Badge text={'FULLY CUSTOMIZED'}></Badge>
+                    </div>
                     <h2>Custom software development</h2>
                     <p>Our team specializes in building tailor-made software solutions that perfectly align with your business goals. From concept to deployment, we handle every aspect of the development process with precision and expertise.</p>
                     <p>Whether you need a web application, mobile app, or enterprise system, we deliver high-quality code that scales with your business.</p>
@@ -101,6 +104,9 @@
                     <img src="/full-scope.svg" alt="Full Scope of Work">
                 </div>
                 <div class="col-12 col-lg-6">
+                    <div class="text-start">
+                        <Badge text={'END-TO-END'}></Badge>
+                    </div>
                     <h2>Full scope of work</h2>
                     <p>We provide end-to-end solutions covering every phase of your project lifecycle. From initial consultation and planning to design, development, testing, and ongoing maintenance.</p>
                     <p>Our comprehensive approach ensures seamless integration and optimal performance across all aspects of your digital ecosystem.</p>
@@ -116,6 +122,9 @@
         <div class="content-wrapper">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="text-start">
+                        <Badge text={'FUTURE'}></Badge>
+                    </div>
                     <h2>Modernizing legacy tech</h2>
                     <p>Transform your outdated systems into modern, efficient solutions. We help businesses migrate from legacy technologies to cutting-edge platforms without disrupting operations.</p>
                     <p>Our modernization approach improves performance, security, and maintainability while preserving your valuable business logic and data.</p>
@@ -387,6 +396,7 @@
             margin-bottom: 1.25rem;
             line-height: 1.2;
             letter-spacing: -0.02em;
+            text-align: left;
         }
 
         p {
@@ -395,6 +405,7 @@
             margin-bottom: 1rem;
             color: #555;
             max-width: 420px;
+            text-align: left;
         }
 
         img {
