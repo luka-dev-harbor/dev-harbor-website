@@ -15,23 +15,24 @@
     <link rel="canonical" href="https://dev-harbor.com/" />
 </svelte:head>
 
-<div class="page-content">
+<div class="page-content mt-5">
 
     <!------------------------->
     <!-- HERO HEADER + IMAGE -->
     <!------------------------->
-    <div class="hero-section">
-        <div class="hero-content">
-            <h1>Built in harbor.</h1>
-            <h1>Ready for open waters.</h1>
-            <div class="hero-subtitle">
-                <p>At Dev Harbor, we build custom software that's more than just code.</p>
-                <p>It's the foundation for your journey.</p>
-            </div>
-            <button class="btn btn-primary">Get started</button>
-        </div>
-        <img src="/hero-image.svg" class="hero-image" alt="Hero">
+    <div class="page-title">
+        <h1 class="text-center px-3 mb-0">Built in harbor.</h1>
+        <h1 class="text-center px-3">Ready for open waters.</h1>
     </div>
+
+    <h6 class="text-muted text-center px-3 mb-0 mt-3">At Dev Harbor, we build custom software that's more than just code.</h6>
+    <h6 class="text-muted text-center px-3">It's the foundation for your journey.</h6>
+
+    <div class="text-center mt-4">
+        <button class="btn btn-primary">Get started</button>
+    </div>
+
+    <img src="/hero-image.svg" class="hero-image mt-5" alt="Hero">
 
     <!-- WAVE -->
     <HeroGradientWave></HeroGradientWave>
@@ -315,51 +316,19 @@
     }
 
     /* Hero Section */
-    .hero-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 70px 20px 60px;
+    .page-title h1 {
+        font-size: 2.5rem;
+    }
 
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+    @media (min-width: 768px) {
+        .page-title h1 {
+            font-size: 50px;
         }
+    }
 
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 400;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
-            margin-bottom: 0;
-        }
-
-        .hero-subtitle {
-            margin: 2rem auto 0;
-
-            p {
-                font-size: 1rem;
-                color: #666;
-                line-height: 1.6;
-                margin-bottom: 0.15rem;
-            }
-        }
-
-        .btn-primary {
-            margin-top: 2rem;
-        }
-
-        .hero-image {
-            display: block;
-            width: 100%;
-            max-width: 950px;
-            margin: 30px auto 0;
-            margin-bottom: -100px;
-            position: relative;
-            z-index: 1;
-        }
+    .hero-image {
+        width: 100%;
+        height: auto;
     }
 
     /* Black Box Section */
@@ -697,27 +666,6 @@
         }
     }
 
-    /* Responsive: Large screens (768px+) */
-    @media (min-width: 768px) {
-        .hero-section {
-            padding: 70px 20px 80px;
-
-            h1 {
-                font-size: 4.5rem;
-            }
-
-            .hero-subtitle p {
-                font-size: 1.1rem;
-            }
-
-            .hero-image {
-                max-width: 1500px;
-                margin-top: 40px;
-                margin-bottom: -185px;
-            }
-        }
-    }
-
     /* Responsive: Tablets (max 991px) */
     @media (max-width: 991px) {
         .white-section {
@@ -753,22 +701,6 @@
 
     /* Responsive: Mobile (max 767px) */
     @media (max-width: 767px) {
-        .hero-section {
-            padding: 70px 20px 35px;
-
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-subtitle {
-                max-width: 90%;
-
-                p {
-                    font-size: 0.9rem;
-                }
-            }
-        }
-
         .black-box {
             padding: 50px 0 60px;
 
@@ -827,18 +759,6 @@
 
     /* Responsive: Small mobile (max 480px) */
     @media (max-width: 480px) {
-        .hero-section {
-            padding: 60px 20px 30px;
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .hero-subtitle p {
-                font-size: 0.85rem;
-            }
-        }
-
         .technologies-section .tech-grid {
             grid-template-columns: repeat(2, 1fr);
         }
