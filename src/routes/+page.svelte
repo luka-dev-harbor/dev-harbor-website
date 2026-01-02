@@ -147,25 +147,25 @@
             <h1>Expertise</h1>
             <div class="expertise-grid">
                 <div class="expertise-card">
-                    <div class="icon-circle">
+                    <div class="icon-square">
                         <span class="icon code"></span>
                     </div>
                     <h3>Web Apps</h3>
-                    <p>Modern, responsive web applications built with cutting-edge technologies and best practices.</p>
+                    <p>Building software for businesses of any size, from small applications to large-scale systems.</p>
                 </div>
                 <div class="expertise-card">
-                    <div class="icon-circle">
-                        <span class="icon mobile-dev-mode"></span>
-                    </div>
-                    <h3>Native Mobile</h3>
-                    <p>Native and cross-platform mobile applications designed for optimal performance and user experience.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="icon-circle">
+                    <div class="icon-square">
                         <span class="icon dashboard-dots"></span>
                     </div>
+                    <h3>Native Mobile</h3>
+                    <p>Engaging and intuitive mobile experiences for your audience on-the-go.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-square">
+                        <span class="icon iris-scan"></span>
+                    </div>
                     <h3>Consulting</h3>
-                    <p>Strategic technology consulting to help you make informed decisions about your digital transformation.</p>
+                    <p>Expert guidance and solutions to help your business thrive in the digital age.</p>
                 </div>
             </div>
 
@@ -430,21 +430,20 @@
         padding: 1.5rem 1rem;
         text-align: center;
 
-        .icon-circle {
-            width: 70px;
-            height: 70px;
+        .icon-square {
+            width: 100px;
+            height: 100px;
             background-color: #fff;
-            border-radius: 50%;
+            border-radius: 16px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0 auto 1.25rem;
-            box-shadow: 0 2px 8px rgba(255, 255, 255, 0.06);
 
             .icon {
-                width: 32px;
-                height: 32px;
-                background-size: 32px !important;
+                width: 48px;
+                height: 48px;
+                background-size: 48px !important;
                 filter: brightness(0);
             }
         }
@@ -461,7 +460,7 @@
             font-size: 0.875rem;
             line-height: 1.5;
             color: #aaa;
-            max-width: 250px;
+            max-width: 180px;
             margin: 0 auto;
         }
     }
