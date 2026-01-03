@@ -38,12 +38,12 @@
 </script>
 
 <svelte:head>
-    <title>Dev Harbor — Custom Web Development</title>
+    <title>Dev Harbor - Custom Web Development</title>
     <meta name="description" content="Dev Harbor builds custom web applications, mobile apps, and enterprise software. Belgrade-based development team specializing in modern, scalable solutions." />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Dev Harbor — Custom Web Development" />
+    <meta property="og:title" content="Dev Harbor - Custom Web Development" />
     <meta property="og:description" content="Dev Harbor builds custom web applications, mobile apps, and enterprise software. Belgrade-based development team specializing in modern, scalable solutions." />
     <meta property="og:image" content="https://dev-harbor.com/og-image.png" />
     <meta property="og:url" content="https://dev-harbor.com/" />
@@ -51,7 +51,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dev Harbor — Custom Web Development" />
+    <meta name="twitter:title" content="Dev Harbor - Custom Web Development" />
     <meta name="twitter:description" content="Dev Harbor builds custom web applications, mobile apps, and enterprise software." />
     <meta name="twitter:image" content="https://dev-harbor.com/og-image.png" />
 
@@ -135,7 +135,7 @@
                 <h1>Core Values</h1>
             </div>
             <div class="values-cards">
-                <WhiteCard iconClass="iris-scan" isLeft={true} headerText="User Experience" bodyText="Apps your users will genuinely love using — not just tolerate."></WhiteCard>
+                <WhiteCard iconClass="iris-scan" isLeft={true} headerText="User Experience" bodyText="Apps your users will genuinely love using - not just tolerate."></WhiteCard>
                 <WhiteCard iconClass="code" isLeft={false} headerText="Tailor-Made Solutions" bodyText="Software built around your specific needs, not the other way around."></WhiteCard>
                 <WhiteCard iconClass="magic" isLeft={true} headerText="Simplicity" bodyText="We find elegant, straightforward solutions to even the most complex problems."></WhiteCard>
                 <WhiteCard iconClass="subtract" isLeft={false} headerText="Scalable Design" bodyText="Every application is architected for growth and change from day one."></WhiteCard>
@@ -162,8 +162,8 @@
                         <Badge text={'BUILT FROM SCRATCH'}></Badge>
                     </div>
                     <h2>Custom software development</h2>
-                    <p>Every business works differently, and your software should reflect that. We handle the full development process — from understanding your needs to building and deploying a solution that fits.</p>
-                    <p>Web applications, mobile apps, enterprise systems — we build what you actually need, nothing more, nothing less.</p>
+                    <p>Every business works differently, and your software should reflect that. We handle the full development process - from understanding your needs to building and deploying a solution that fits.</p>
+                    <p>Web applications, mobile apps, enterprise systems - we build what you actually need, nothing more, nothing less.</p>
                 </div>
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
                     <img src="/custom-software.svg" alt="Custom Software Development">
@@ -186,7 +186,7 @@
                         <Badge text={'END-TO-END'}></Badge>
                     </div>
                     <h2>Full scope of work</h2>
-                    <p>We handle every phase of your project lifecycle — from initial consultation and planning to design, development, testing, and ongoing maintenance.</p>
+                    <p>We handle every phase of your project lifecycle - from initial consultation and planning to design, development, testing, and ongoing maintenance.</p>
                     <p>Working with a single team from start to finish means better coordination, clearer communication, and a product that holds together.</p>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                     </div>
                     <h2>Modernizing legacy tech</h2>
                     <p>Outdated systems slow you down and become harder to maintain over time. We help you migrate to modern technologies without disrupting your day-to-day operations.</p>
-                    <p>Your existing business logic and data stay intact — you get better performance, improved security, and a codebase that's easier to work with going forward.</p>
+                    <p>Your existing business logic and data stay intact - you get better performance, improved security, and a codebase that's easier to work with going forward.</p>
                 </div>
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
                     <img src="/modernize.svg" alt="Modernizing Legacy Tech">
