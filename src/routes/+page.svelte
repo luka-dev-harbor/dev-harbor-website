@@ -39,11 +39,52 @@
 
 <svelte:head>
     <title>Dev Harbor — Custom Web Development</title>
-    <meta name="description" content="We craft modern, fast, and beautiful websites for your business." />
+    <meta name="description" content="Dev Harbor builds custom web applications, mobile apps, and enterprise software. Belgrade-based development team specializing in modern, scalable solutions." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Dev Harbor — Custom Web Development" />
-    <meta property="og:description" content="We craft modern, fast, and beautiful websites for your business." />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:description" content="Dev Harbor builds custom web applications, mobile apps, and enterprise software. Belgrade-based development team specializing in modern, scalable solutions." />
+    <meta property="og:image" content="https://dev-harbor.com/og-image.png" />
+    <meta property="og:url" content="https://dev-harbor.com/" />
+    <meta property="og:site_name" content="Dev Harbor" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dev Harbor — Custom Web Development" />
+    <meta name="twitter:description" content="Dev Harbor builds custom web applications, mobile apps, and enterprise software." />
+    <meta name="twitter:image" content="https://dev-harbor.com/og-image.png" />
+
     <link rel="canonical" href="https://dev-harbor.com/" />
+
+    <!-- JSON-LD Structured Data -->
+    {@html `<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dev Harbor",
+        "legalName": "Dev Harbor d.o.o.",
+        "url": "https://dev-harbor.com",
+        "logo": "https://dev-harbor.com/logo.svg",
+        "description": "Custom software development company specializing in web applications, mobile apps, and enterprise solutions.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Belgrade",
+            "addressCountry": "RS"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Luka Stanisic"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "office@dev-harbor.com",
+            "contactType": "sales"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": ["Web Development", "Mobile App Development", "Custom Software Development", "IT Consulting"]
+    }
+    </script>`}
 </svelte:head>
 
 <div class="page-content mt-5">
