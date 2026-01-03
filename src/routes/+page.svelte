@@ -42,7 +42,6 @@
     <meta property="og:description" content="We craft modern, fast, and beautiful websites for your business." />
     <meta property="og:image" content="/og-image.png" />
     <link rel="canonical" href="https://dev-harbor.com/" />
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </svelte:head>
 
 <div class="page-content mt-5">
@@ -324,7 +323,6 @@
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required disabled={formStatus === 'submitting'}>
                         <input type="email" name="email" class="form-control" placeholder="Your Email" required disabled={formStatus === 'submitting'}>
                         <textarea name="message" class="form-control" rows="7" placeholder="Your Message" required disabled={formStatus === 'submitting'}></textarea>
-                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAACKVEy0xWbEnu1yJ" data-theme="light"></div>
                         {#if formStatus === 'error'}
                             <p class="form-error">Something went wrong. Please try again.</p>
                         {/if}
