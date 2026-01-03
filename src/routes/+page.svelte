@@ -90,12 +90,12 @@
                 <h1>Core Values</h1>
             </div>
             <div class="values-cards">
-                <WhiteCard iconClass="iris-scan" isLeft={true} headerText="User Experience" bodyText="We create beautiful & clean apps that people enjoy using daily"></WhiteCard>
-                <WhiteCard iconClass="code" isLeft={false} headerText="Tailor-Made Solutions" bodyText="We are developing software specifically for every individual requirement"></WhiteCard>
-                <WhiteCard iconClass="magic" isLeft={true} headerText="Simplicity" bodyText="We always strive to find and implement the simplest solution for any given problem"></WhiteCard>
-                <WhiteCard iconClass="subtract" isLeft={false} headerText="Scalable Design" bodyText="We build every application with stable growth and future improvements in mind"></WhiteCard>
-                <WhiteCard iconClass="dashboard-dots" isLeft={true} headerText="Performance" bodyText="We take great measures to ensure all our applications are blazing fast"></WhiteCard>
-                <WhiteCard iconClass="mobile-dev-mode" isLeft={false} headerText="Responsive design" bodyText="We design all our apps to work perfectly with laptops, tablets and smart phones"></WhiteCard>
+                <WhiteCard iconClass="iris-scan" isLeft={true} headerText="User Experience" bodyText="Apps your users will genuinely love using — not just tolerate."></WhiteCard>
+                <WhiteCard iconClass="code" isLeft={false} headerText="Tailor-Made Solutions" bodyText="Software built around your specific needs, not the other way around."></WhiteCard>
+                <WhiteCard iconClass="magic" isLeft={true} headerText="Simplicity" bodyText="We find elegant, straightforward solutions to even the most complex problems."></WhiteCard>
+                <WhiteCard iconClass="subtract" isLeft={false} headerText="Scalable Design" bodyText="Every application is architected for growth and change from day one."></WhiteCard>
+                <WhiteCard iconClass="dashboard-dots" isLeft={true} headerText="Performance" bodyText="Speed and responsiveness you can feel in every single interaction."></WhiteCard>
+                <WhiteCard iconClass="mobile-dev-mode" isLeft={false} headerText="Responsive Design" bodyText="A seamless experience across every screen, device, and platform."></WhiteCard>
             </div>
 
         </div>
@@ -112,11 +112,11 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
                     <div class="text-start">
-                        <Badge text={'FULLY CUSTOMIZED'}></Badge>
+                        <Badge text={'BUILT FROM SCRATCH'}></Badge>
                     </div>
                     <h2>Custom software development</h2>
-                    <p>Our team specializes in building tailor-made software solutions that perfectly align with your business goals. From concept to deployment, we handle every aspect of the development process with precision and expertise.</p>
-                    <p>Whether you need a web application, mobile app, or enterprise system, we deliver high-quality code that scales with your business.</p>
+                    <p>Every business works differently, and your software should reflect that. We handle the full development process — from understanding your needs to building and deploying a solution that fits.</p>
+                    <p>Web applications, mobile apps, enterprise systems — we build what you actually need, nothing more, nothing less.</p>
                 </div>
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
                     <img src="/custom-software.svg" alt="Custom Software Development">
@@ -139,8 +139,8 @@
                         <Badge text={'END-TO-END'}></Badge>
                     </div>
                     <h2>Full scope of work</h2>
-                    <p>We provide end-to-end solutions covering every phase of your project lifecycle. From initial consultation and planning to design, development, testing, and ongoing maintenance.</p>
-                    <p>Our comprehensive approach ensures seamless integration and optimal performance across all aspects of your digital ecosystem.</p>
+                    <p>We handle every phase of your project lifecycle — from initial consultation and planning to design, development, testing, and ongoing maintenance.</p>
+                    <p>Working with a single team from start to finish means better coordination, clearer communication, and a product that holds together.</p>
                 </div>
             </div>
         </div>
@@ -157,8 +157,8 @@
                         <Badge text={'FUTURE'}></Badge>
                     </div>
                     <h2>Modernizing legacy tech</h2>
-                    <p>Transform your outdated systems into modern, efficient solutions. We help businesses migrate from legacy technologies to cutting-edge platforms without disrupting operations.</p>
-                    <p>Our modernization approach improves performance, security, and maintainability while preserving your valuable business logic and data.</p>
+                    <p>Outdated systems slow you down and become harder to maintain over time. We help you migrate to modern technologies without disrupting your day-to-day operations.</p>
+                    <p>Your existing business logic and data stay intact — you get better performance, improved security, and a codebase that's easier to work with going forward.</p>
                 </div>
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
                     <img src="/modernize.svg" alt="Modernizing Legacy Tech">
@@ -175,7 +175,7 @@
     <!------------->
     <div class="black-box pb-3">
         <div class="content-wrapper">
-            <Badge text={'PROFESSIONAL'}></Badge>
+            <Badge text={'SERVICES'}></Badge>
             <h1>Expertise</h1>
             <div class="expertise-grid">
                 <div class="expertise-card">
@@ -183,21 +183,21 @@
                         <span class="icon code"></span>
                     </div>
                     <h3>Web Apps</h3>
-                    <p>Building software for businesses of any size, from small applications to large-scale systems.</p>
+                    <p>From simple internal tools to complex platforms, we build web applications that fit your business.</p>
                 </div>
                 <div class="expertise-card">
                     <div class="icon-square">
                         <span class="icon dashboard-dots"></span>
                     </div>
                     <h3>Native Mobile</h3>
-                    <p>Engaging and intuitive mobile experiences for your audience on-the-go.</p>
+                    <p>iOS and Android apps built for performance, usability, and seamless integration with your systems.</p>
                 </div>
                 <div class="expertise-card">
                     <div class="icon-square">
                         <span class="icon iris-scan"></span>
                     </div>
                     <h3>Consulting</h3>
-                    <p>Expert guidance and solutions to help your business thrive in the digital age.</p>
+                    <p>Honest, practical advice to help you plan, prioritize, and avoid common pitfalls.</p>
                 </div>
             </div>
 
@@ -499,7 +499,7 @@
             font-size: 0.875rem;
             line-height: 1.5;
             color: #aaa;
-            max-width: 180px;
+            max-width: 185px;
             margin: 0 auto;
         }
     }
