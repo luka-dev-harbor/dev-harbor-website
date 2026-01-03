@@ -47,7 +47,7 @@
             <!-- CLIENTS -->
             <!------------->
             <div class="clients-section">
-                <Badge text={'TRUSTED BY'}></Badge>
+                <Badge text={'TRUSTED BY COMPANIES WORLDWIDE'}></Badge>
                 <img src="/clients.svg" class="clients-logos" alt="Clients">
             </div>
 
@@ -55,7 +55,7 @@
             <!-- CORE VALUES -->
             <!----------------->
             <div class="values-section">
-                <Badge text={'VALUES'}></Badge>
+                <Badge text={'OUR VALUES'}></Badge>
                 <h1>Core Values</h1>
             </div>
             <div class="values-cards">
@@ -198,56 +198,47 @@
             <!---------------------------->
             <!-- BASIC CONTRACT OPTIONS -->
             <!---------------------------->
-            <div class="pricing-section">
+            <div id="pricing" class="pricing-section">
                 <Badge text={'PRICING'}></Badge>
                 <h1>Basic Contract Options</h1>
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <div class="pricing-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="1" x2="12" y2="23"></line>
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                            </svg>
+                            <span class="icon dollar"></span>
                         </div>
                         <h3>Fixed Price</h3>
-                        <p>Perfect for well-defined projects with clear requirements and scope.</p>
+                        <p>Best for well-defined projects with clear scope and predictable budgets.</p>
                         <ul>
-                            <li>Defined scope and timeline</li>
-                            <li>Predictable costs</li>
+                            <li>Complete scope definition upfront</li>
+                            <li>Guaranteed budget certainty</li>
                             <li>Milestone-based delivery</li>
-                            <li>Quality assurance included</li>
+                            <li>Ideal for MVPs and short-term projects</li>
                         </ul>
                     </div>
                     <div class="pricing-card">
                         <div class="pricing-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
+                            <span class="icon timer"></span>
                         </div>
                         <h3>Time & Materials</h3>
-                        <p>Ideal for evolving projects that require adaptability and iterative development.</p>
+                        <p>Flexible engagement for projects where requirements evolve over time.</p>
                         <ul>
-                            <li>Agile methodology</li>
-                            <li>Regular sprint reviews</li>
-                            <li>Flexible scope adjustments</li>
-                            <li>Continuous feedback integration</li>
+                            <li>Pay only for actual work delivered</li>
+                            <li>Adapt scope as priorities shift</li>
+                            <li>Sprint-based Agile workflow</li>
+                            <li>Full transparency on time spent</li>
                         </ul>
                     </div>
                     <div class="pricing-card">
                         <div class="pricing-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
+                            <span class="icon user-star"></span>
                         </div>
-                        <h3>Dedicated Dev</h3>
-                        <p>For clients who have their own design and project management but need development expertise.</p>
+                        <h3>Dedicated Developer</h3>
+                        <p>Extend your team with developers fully committed to your product's success.</p>
                         <ul>
-                            <li>Pure development focus</li>
-                            <li>Work with your existing team</li>
-                            <li>Technical implementation only</li>
-                            <li>Code review and optimization</li>
+                            <li>Seamless team integration</li>
+                            <li>Scale up or down as needed</li>
+                            <li>Direct communication & collaboration</li>
+                            <li>Long-term partnership model</li>
                         </ul>
                     </div>
                 </div>
@@ -266,30 +257,32 @@
     <!------------>
     <!-- CONTACT -->
     <!------------>
-    <div class="contact-section">
+    <div id="contact" class="contact-section">
         <div class="content-wrapper">
             <div class="contact-grid">
                 <div class="contact-info">
                     <Badge text={'BOOK A MEETING'}></Badge>
                     <h2 class="mt-0">Contact Us</h2>
                     <p class="contact-item">
-                        <strong>Address:</strong><br>
-                        123 Harbor Street<br>
-                        Tech Bay, CA 94102
+                        <strong>Email:</strong>
+                        office@dev-harbor.com
                     </p>
                     <p class="contact-item">
-                        <strong>Phone:</strong><br>
-                        +1 (555) 123-4567
+                        <strong>Location:</strong>
+                        Belgrade, Serbia
                     </p>
                     <p class="contact-item">
-                        <strong>Email:</strong><br>
-                        hello@dev-harbor.com
+                        <strong>Company info:</strong>
+                        <span class="text-muted">Name:</span> Dev Harbor d.o.o. <br>
+                        <span class="text-muted">Founder:</span> Luka Stanisic <br>
+                        <span class="text-muted">Company ID:</span> 21797235 <br>
+                        <span class="text-muted">VAT No:</span> 113075028 <br>
                     </p>
                 </div>
                 <form class="contact-form">
                     <input type="text" class="form-control" placeholder="Your Name" required>
                     <input type="email" class="form-control" placeholder="Your Email" required>
-                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    <textarea class="form-control" rows="7" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn btn-primary">Send</button>
                 </form>
             </div>
@@ -307,6 +300,14 @@
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        text-align: left;
     }
 
     /* Buttons */
@@ -352,14 +353,6 @@
         padding: 60px 0 150px;
         text-align: center;
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 500;
-            margin-bottom: 2.5rem;
-            margin-top: 0.5rem;
-            letter-spacing: -0.02em;
-        }
-
         .clients-section {
             display: flex;
             flex-direction: column;
@@ -395,15 +388,6 @@
         .content-wrapper {
             max-width: 1100px;
             padding: 0 24px;
-        }
-
-        h2 {
-            font-size: 2.25rem;
-            font-weight: 600;
-            margin-bottom: 1.25rem;
-            line-height: 1.2;
-            letter-spacing: -0.02em;
-            text-align: left;
         }
 
         p {
@@ -516,6 +500,10 @@
         margin-top: 4rem;
         padding: 0 1.5rem;
 
+        &#pricing {
+            scroll-margin-top: 150px;
+        }
+
         h1 {
             margin-bottom: 2.5rem;
         }
@@ -543,12 +531,12 @@
             }
 
             .pricing-icon {
-                margin-bottom: 1.25rem;
+                margin-bottom: 0.25rem;
 
-                svg {
-                    color: #000;
-                    width: 28px;
-                    height: 28px;
+                .icon {
+                    width: 58px;
+                    height: 58px;
+                    background-size: 58px !important;
                 }
             }
 
@@ -604,16 +592,15 @@
     /* Quote */
     .quote-section {
         padding: 3rem 0;
-        margin: 2rem 0;
+        margin: 2.5rem 0 2rem 0;
 
         p {
-            font-family: 'Georgia', serif;
-            font-style: italic;
-            font-size: 1.5rem;
-            color: #888;
+            font-family: "Pinyon Script", cursive;
             font-weight: 400;
+            font-style: normal;
+            font-size: 2.5rem;
+            color: #888;
             line-height: 1.4;
-            max-width: 500px;
             margin: 0 auto;
         }
     }
@@ -634,14 +621,6 @@
             gap: 3rem;
         }
 
-        h2 {
-            font-size: 2.25rem;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 1rem;
-            line-height: 1.2;
-        }
-
         .contact-item {
             color: #555;
             margin-bottom: 1.5rem;
@@ -654,6 +633,9 @@
                 display: block;
                 margin-bottom: 0.35rem;
                 font-size: 0.95rem;
+            }
+            .text-muted {
+                color: #aaa !important;
             }
         }
 

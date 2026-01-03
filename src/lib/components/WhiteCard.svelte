@@ -35,7 +35,6 @@
 
         h2 {
             color: #000;
-            font-weight: 500;
             margin: 0.75rem 0 0.5rem;
             font-size: 1.6rem;
             line-height: 1.3;

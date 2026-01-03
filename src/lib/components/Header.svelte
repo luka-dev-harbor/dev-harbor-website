@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <nav class="navbar fixed-top navbar-expand-md">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
@@ -12,13 +15,13 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/pricing">Pricing</a>
+                    <a class="nav-link" href="/#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="/#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -29,6 +32,10 @@
     .navbar {
         height: 80px;
         padding: 20px;
+
+        .navbar-brand {
+            z-index: 5;
+        }
 
         .logo {
             height: 40px;
