@@ -37,6 +37,7 @@
         padding: 0 20px;
     }
     .tree-waiting {
-        max-width: 900px;
+        width: 100%;
+        max-width: 800px;
     }
 </style>
