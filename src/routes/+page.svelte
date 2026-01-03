@@ -4,6 +4,35 @@
     import HeroGradientWave from "$lib/components/HeroGradientWave.svelte";
     import CleanLineTransition from "$lib/components/CleanLineTransition.svelte";
     import CurvedTransition from "$lib/components/CurvedTransition.svelte";
+
+    let formStatus = $state('idle'); // 'idle' | 'submitting' | 'success' | 'error'
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        formStatus = 'submitting';
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch('https://submit-form.com/oJlrklgSo', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                formStatus = 'success';
+                form.reset();
+            } else {
+                formStatus = 'error';
+            }
+        } catch (error) {
+            formStatus = 'error';
+        }
+    }
 </script>
 
 <svelte:head>
@@ -13,6 +42,7 @@
     <meta property="og:description" content="We craft modern, fast, and beautiful websites for your business." />
     <meta property="og:image" content="/og-image.png" />
     <link rel="canonical" href="https://dev-harbor.com/" />
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </svelte:head>
 
 <div class="page-content mt-5">
@@ -279,12 +309,30 @@
                         <span class="text-muted">VAT No:</span> 113075028 <br>
                     </p>
                 </div>
-                <form class="contact-form">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
-                    <input type="email" class="form-control" placeholder="Your Email" required>
-                    <textarea class="form-control" rows="7" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
+                {#if formStatus === 'success'}
+                    <div class="form-success">
+                        <h3>Thank you!</h3>
+                        <p>Your message has been sent successfully. We'll get back to you soon.</p>
+                        <div class="text-center mb-5">
+                            <img src="/mail-sent.svg" class="mail-sent" alt="Mail sent">
+                        </div>
+                        <button class="btn btn-outline-dark" onclick={() => formStatus = 'idle'}>Send another message</button>
+                    </div>
+                {:else}
+                    <form class="contact-form" onsubmit={handleSubmit}>
+                        <input type="checkbox" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required disabled={formStatus === 'submitting'}>
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required disabled={formStatus === 'submitting'}>
+                        <textarea name="message" class="form-control" rows="7" placeholder="Your Message" required disabled={formStatus === 'submitting'}></textarea>
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAACKVEy0xWbEnu1yJ" data-theme="light"></div>
+                        {#if formStatus === 'error'}
+                            <p class="form-error">Something went wrong. Please try again.</p>
+                        {/if}
+                        <button type="submit" class="btn btn-primary" disabled={formStatus === 'submitting'}>
+                            {formStatus === 'submitting' ? 'Sending...' : 'Send'}
+                        </button>
+                    </form>
+                {/if}
             </div>
         </div>
     </div>
@@ -672,6 +720,59 @@
 
         .btn-primary {
             width: 100%;
+
+            &:disabled {
+                background-color: #999;
+                cursor: not-allowed;
+            }
+        }
+
+        .form-success {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+
+            h3 {
+                color: #000;
+                font-size: 1.5rem;
+                margin: 0 0 0.75rem;
+            }
+
+            p {
+                color: #666;
+                font-size: 0.95rem;
+                margin: 0 0 1.5rem;
+                line-height: 1.5;
+            }
+
+            .mail-sent {
+                max-width: 150px;
+            }
+
+            .btn-outline-dark {
+                background-color: transparent;
+                border: 1px solid #000;
+                color: #000;
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.2s, color 0.2s;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+        }
+
+        .form-error {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin: 0;
+            text-align: center;
         }
     }
 
@@ -688,14 +789,6 @@
             p {
                 max-width: none;
             }
-        }
-
-        .expertise-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .pricing-section .pricing-grid {
-            grid-template-columns: repeat(2, 1fr);
         }
 
         .technologies-section .tech-row {

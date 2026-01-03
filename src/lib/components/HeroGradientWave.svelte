@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <div class="wave-container">
     <svg viewBox="0 0 1440 150" preserveAspectRatio="none" class="wave-svg">
         <path d="M0,20 C200,40 350,15 720,10 C1100,5 1250,50 1440,80 L1440,150 L0,150 Z" fill="#bbb"/>
@@ -21,15 +24,23 @@
         display: block;
     }
 
+    @media (max-width: 1399px) {
+        .wave-container {
+            margin-top: -25px;
+        }
+    }
+
     @media (max-width: 767px) {
         .wave-container {
             height: 100px;
+            margin-top: -15px;
         }
     }
 
     @media (max-width: 480px) {
         .wave-container {
             height: 70px;
+            margin-top: -10px;
         }
     }
 </style>
