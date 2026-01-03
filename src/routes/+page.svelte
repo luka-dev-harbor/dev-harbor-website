@@ -312,8 +312,8 @@
                 </div>
                 {#if formStatus === 'success'}
                     <div class="form-success">
-                        <h3>Thank you!</h3>
-                        <p>Your message has been sent successfully. We'll get back to you soon.</p>
+                        <h3>Thank you for reaching out!</h3>
+                        <p>We've got it from here. Expect to hear from us soon.</p>
                         <div class="text-center mb-5">
                             <img src="/mail-sent.svg" class="mail-sent" alt="Mail sent">
                         </div>

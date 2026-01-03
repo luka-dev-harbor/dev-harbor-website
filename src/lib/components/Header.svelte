@@ -1,4 +1,10 @@
 <script>
+    function closeMenu() {
+        const navbar = document.getElementById('main-navbar');
+        if (navbar?.classList.contains('show')) {
+            navbar.classList.remove('show');
+        }
+    }
 </script>
 
 <nav class="navbar fixed-top navbar-expand-md">
@@ -12,16 +18,16 @@
         <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/" onclick={closeMenu}>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#pricing">Pricing</a>
+                    <a class="nav-link" href="/#pricing" onclick={closeMenu}>Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
+                    <a class="nav-link" href="/blog" onclick={closeMenu}>Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#contact">Contact</a>
+                    <a class="nav-link" href="/#contact" onclick={closeMenu}>Contact</a>
                 </li>
             </ul>
         </div>
@@ -98,11 +104,17 @@
     /* COLLAPSED MENU STYLE (on smaller screens) */
     @media (max-width: 767px) {
         .navbar {
+            background-color: rgba(0, 0, 0, 0.2);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            mix-blend-mode: difference;
+
             .navbar-collapse {
                 background-color: #fff;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
                 padding: 1rem;
                 margin-top: 1rem;
+                mix-blend-mode: normal;
 
                 .navbar-nav {
                     .nav-item {
@@ -116,6 +128,14 @@
                             color: #000 !important;
                         }
                     }
+                }
+            }
+
+            .navbar-toggler {
+                border: none;
+
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke-width='3' color='%23fff'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' d='M3 5h18M3 12h18M3 19h18'/%3E%3C/svg%3E") !important;
                 }
             }
         }
