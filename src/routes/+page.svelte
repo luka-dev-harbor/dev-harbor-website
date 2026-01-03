@@ -61,7 +61,7 @@
         <h6 class="text-muted text-center px-3">It's the foundation for your journey.</h6>
 
         <div class="text-center mt-4">
-            <button class="btn btn-primary">Get started</button>
+            <a href="/#contact" class="btn btn-primary">Build with us</a>
         </div>
 
         <img src="/hero-image.svg" class="hero-image mt-5" alt="Hero">
@@ -424,6 +424,7 @@
 
     .hero-image {
         width: 100%;
+        max-width: 2000px;
         height: auto;
     }
 
