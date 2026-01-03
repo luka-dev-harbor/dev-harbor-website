@@ -51,27 +51,31 @@
     <!------------------------->
     <!-- HERO HEADER + IMAGE -->
     <!------------------------->
-    <div class="page-title">
-        <h1 class="text-center px-3 mb-0">Built in harbor.</h1>
-        <h1 class="text-center px-3">Ready for open waters.</h1>
+    <div class="hero-section" data-header-theme="dark">
+        <div class="page-title">
+            <h1 class="text-center px-3 mb-0">Built in harbor.</h1>
+            <h1 class="text-center px-3">Ready for open waters.</h1>
+        </div>
+
+        <h6 class="text-muted text-center px-3 mb-0 mt-3">At Dev Harbor, we build custom software that's more than just code.</h6>
+        <h6 class="text-muted text-center px-3">It's the foundation for your journey.</h6>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-primary">Get started</button>
+        </div>
+
+        <img src="/hero-image.svg" class="hero-image mt-5" alt="Hero">
+
+        <!-- WAVE -->
+        <div data-header-theme="light">
+            <HeroGradientWave></HeroGradientWave>
+        </div>
     </div>
-
-    <h6 class="text-muted text-center px-3 mb-0 mt-3">At Dev Harbor, we build custom software that's more than just code.</h6>
-    <h6 class="text-muted text-center px-3">It's the foundation for your journey.</h6>
-
-    <div class="text-center mt-4">
-        <button class="btn btn-primary">Get started</button>
-    </div>
-
-    <img src="/hero-image.svg" class="hero-image mt-5" alt="Hero">
-
-    <!-- WAVE -->
-    <HeroGradientWave></HeroGradientWave>
 
     <!--------------->
     <!-- BLACK BOX -->
     <!--------------->
-    <div class="black-box">
+    <div class="black-box" data-header-theme="light">
         <div class="content-wrapper">
 
             <!------------->
@@ -102,12 +106,14 @@
     </div>
 
     <!-- CLEAN LINE TRANSITION -->
-    <CleanLineTransition></CleanLineTransition>
+    <div data-header-theme="dark">
+        <CleanLineTransition></CleanLineTransition>
+    </div>
 
     <!-------------------------------->
     <!-- CUSTOM SOFTWARE DEVELOPMENT -->
     <!-------------------------------->
-    <div class="white-section mt-5">
+    <div class="white-section mt-5" data-header-theme="dark">
         <div class="content-wrapper">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
@@ -128,7 +134,7 @@
     <!---------------------->
     <!-- FULL SCOPE OF WORK -->
     <!---------------------->
-    <div class="white-section">
+    <div class="white-section" data-header-theme="dark">
         <div class="content-wrapper">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6">
@@ -149,7 +155,7 @@
     <!--------------------------->
     <!-- MODERNIZING LEGACY TECH -->
     <!--------------------------->
-    <div class="white-section">
+    <div class="white-section" data-header-theme="dark">
         <div class="content-wrapper">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
@@ -168,12 +174,14 @@
     </div>
 
     <!-- CURVED TRANSITION -->
-    <CurvedTransition></CurvedTransition>
+    <div data-header-theme="light">
+        <CurvedTransition></CurvedTransition>
+    </div>
 
     <!------------->
     <!-- EXPERTISE -->
     <!------------->
-    <div class="black-box pb-3">
+    <div class="black-box pb-3" data-header-theme="light">
         <div class="content-wrapper">
             <Badge text={'SERVICES'}></Badge>
             <h1>Expertise</h1>
@@ -288,7 +296,7 @@
     <!------------>
     <!-- CONTACT -->
     <!------------>
-    <div id="contact" class="contact-section">
+    <div id="contact" class="contact-section" data-header-theme="dark">
         <div class="content-wrapper">
             <div class="contact-grid">
                 <div class="contact-info">
