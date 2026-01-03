@@ -213,7 +213,8 @@
             <!-- TECHNOLOGIES -->
             <!--------------->
             <div class="technologies-section">
-                <div class="tech-row">
+                <!-- Desktop: 8 + 7 -->
+                <div class="tech-row desktop-only">
                     <img src="/logo-angular.svg" class="tech-logo logo-tall" alt="Angular">
                     <img src="/logo-svelte.svg" class="tech-logo" alt="Svelte">
                     <img src="/logo-js.svg" class="tech-logo" alt="JavaScript">
@@ -221,13 +222,35 @@
                     <img src="/logo-pg.svg" class="tech-logo logo-tall" alt="PostgreSQL">
                     <img src="/logo-ngrx.svg" class="tech-logo" alt="NgRx">
                     <img src="/logo-docker.svg" class="tech-logo logo-wide" alt="Docker">
-                    <img src="/logo-net.svg" class="tech-logo" alt=".NET">
+                    <img src="/logo-node.svg" class="tech-logo logo-wide" alt="Node.js">
                 </div>
-                <div class="tech-row tech-row-offset">
+                <div class="tech-row desktop-only">
                     <img src="/logo-azure.svg" class="tech-logo" alt="Azure">
                     <img src="/logo-material.svg" class="tech-logo" alt="Material">
                     <img src="/logo-bootstrap.svg" class="tech-logo" alt="Bootstrap">
-                    <img src="/logo-node.svg" class="tech-logo logo-wide" alt="Node.js">
+                    <img src="/logo-net.svg" class="tech-logo" alt=".NET">
+                    <img src="/logo-hugo.svg" class="tech-logo" alt="Hugo">
+                    <img src="/logo-ts.svg" class="tech-logo" alt="TypeScript">
+                    <img src="/logo-gcloud.svg" class="tech-logo" alt="Google Cloud">
+                </div>
+                <!-- Mobile: 6 + 5 + 4 -->
+                <div class="tech-row mobile-only">
+                    <img src="/logo-angular.svg" class="tech-logo" alt="Angular">
+                    <img src="/logo-svelte.svg" class="tech-logo" alt="Svelte">
+                    <img src="/logo-js.svg" class="tech-logo" alt="JavaScript">
+                    <img src="/logo-swift.svg" class="tech-logo" alt="Swift">
+                    <img src="/logo-pg.svg" class="tech-logo" alt="PostgreSQL">
+                    <img src="/logo-ngrx.svg" class="tech-logo" alt="NgRx">
+                </div>
+                <div class="tech-row mobile-only">
+                    <img src="/logo-docker.svg" class="tech-logo" alt="Docker">
+                    <img src="/logo-node.svg" class="tech-logo" alt="Node.js">
+                    <img src="/logo-azure.svg" class="tech-logo" alt="Azure">
+                    <img src="/logo-material.svg" class="tech-logo" alt="Material">
+                    <img src="/logo-bootstrap.svg" class="tech-logo" alt="Bootstrap">
+                </div>
+                <div class="tech-row mobile-only">
+                    <img src="/logo-net.svg" class="tech-logo" alt=".NET">
                     <img src="/logo-hugo.svg" class="tech-logo" alt="Hugo">
                     <img src="/logo-ts.svg" class="tech-logo" alt="TypeScript">
                     <img src="/logo-gcloud.svg" class="tech-logo" alt="Google Cloud">
@@ -523,10 +546,10 @@
             gap: 3rem;
             margin-bottom: 2rem;
             align-items: center;
-        }
 
-        .tech-row-offset {
-            padding-left: 3.5rem;
+            &.mobile-only {
+                display: none;
+            }
         }
 
         .tech-logo {
@@ -803,10 +826,6 @@
             gap: 1.5rem;
         }
 
-        .technologies-section .tech-row-offset {
-            padding-left: 1.5rem;
-        }
-
         .contact-section .contact-grid {
             grid-template-columns: 1fr;
             gap: 2rem;
@@ -844,26 +863,35 @@
             margin: 0 auto;
         }
 
-        .technologies-section .tech-row {
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
+        .technologies-section {
+            .tech-row {
+                display: none;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.5rem 1.25rem;
+                margin: 0 auto 1.5rem;
 
-        .technologies-section .tech-row-offset {
-            padding-left: 0;
-        }
+                &.desktop-only {
+                    display: none;
+                }
 
-        .technologies-section .tech-logo {
-            width: 40px;
-            height: 40px;
+                &.mobile-only {
+                    display: flex;
+                }
+            }
+
+            .tech-logo {
+                width: 48px;
+                height: 48px;
+
+                &.logo-tall, &.logo-wide {
+                    height: 48px;
+                }
+            }
         }
 
         .quote-section {
             padding: 2rem 0;
-
-            p {
-                font-size: 1.15rem;
-            }
         }
 
         .contact-section {
@@ -878,9 +906,27 @@
 
     /* Responsive: Small mobile (max 480px) */
     @media (max-width: 480px) {
-        .technologies-section .tech-logo {
-            width: 32px;
-            height: 32px;
+        .technologies-section {
+            .tech-row {
+                gap: 1.25rem 1rem;
+
+                &.desktop-only {
+                    display: none;
+                }
+
+                &.mobile-only {
+                    display: flex;
+                }
+            }
+
+            .tech-logo {
+                width: 40px;
+                height: 40px;
+
+                &.logo-tall, &.logo-wide {
+                    height: 40px;
+                }
+            }
         }
     }
 </style>
