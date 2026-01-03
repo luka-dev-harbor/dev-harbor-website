@@ -13,14 +13,16 @@
 
         const form = event.target;
         const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
 
         try {
             const response = await fetch('https://submit-form.com/oJlrklgSo', {
                 method: 'POST',
-                body: formData,
                 headers: {
+                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
-                }
+                },
+                body: JSON.stringify(data)
             });
 
             if (response.ok) {
