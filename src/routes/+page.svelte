@@ -94,12 +94,11 @@
     <!------------------------->
     <div class="hero-section" data-header-theme="dark">
         <div class="page-title">
-            <h1 class="text-center px-3 mb-0">Built in harbor.</h1>
-            <h1 class="text-center px-3">Ready for open waters.</h1>
+            <h1>Software,</h1>
+            <h1>built as it should be.</h1>
         </div>
 
-        <h6 class="text-muted text-center px-3 mb-0 mt-3">At Dev Harbor, we build custom software that's more than just code.</h6>
-        <h6 class="text-muted text-center px-3">It's the foundation for your journey.</h6>
+        <p class="hero-subtitle">From a team where every detail matters — since 2020.</p>
 
         <div class="text-center mt-4">
             <a href="/#contact" class="btn btn-primary">Build with us</a>
@@ -455,11 +454,34 @@
     /* Hero Section */
     .page-title h1 {
         font-size: 2.5rem;
+        text-align: center;
+        padding: 0 1rem;
+        margin: 0;
     }
 
     @media (min-width: 768px) {
         .page-title h1 {
             font-size: 50px;
+            padding: 0;
+        }
+    }
+
+    .hero-subtitle {
+        color: #6c757d;
+        text-align: center;
+        font-size: 1rem;
+        max-width: 600px;
+        margin: 0 auto 0;
+        padding: 0 1.5rem;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 576px) {
+        .hero-subtitle {
+            font-size: 0.925rem;
+        }
+        .page-title h1 {
+            padding: 0 2rem;
         }
     }
 
