@@ -126,20 +126,44 @@
                 <img src="/clients.svg" class="clients-logos" alt="Clients">
             </div>
 
-            <!----------------->
-            <!-- CORE VALUES -->
-            <!----------------->
+            <!-------------------->
+            <!-- TRACK RECORD -->
+            <!-------------------->
             <div class="values-section">
-                <Badge text={'OUR VALUES'}></Badge>
-                <h1>Core Values</h1>
+                <Badge text={'TRACK RECORD'}></Badge>
+                <h1>Where we've proven ourselves</h1>
             </div>
             <div class="values-cards">
-                <WhiteCard iconClass="iris-scan" isLeft={true} headerText="User Experience" bodyText="Apps your users will genuinely love using - not just tolerate."></WhiteCard>
-                <WhiteCard iconClass="code" isLeft={false} headerText="Tailor-Made Solutions" bodyText="Software built around your specific needs, not the other way around."></WhiteCard>
-                <WhiteCard iconClass="magic" isLeft={true} headerText="Simplicity" bodyText="We find elegant, straightforward solutions to even the most complex problems."></WhiteCard>
-                <WhiteCard iconClass="subtract" isLeft={false} headerText="Scalable Design" bodyText="Every application is architected for growth and change from day one."></WhiteCard>
-                <WhiteCard iconClass="dashboard-dots" isLeft={true} headerText="Performance" bodyText="Speed and responsiveness you can feel in every single interaction."></WhiteCard>
-                <WhiteCard iconClass="mobile-dev-mode" isLeft={false} headerText="Responsive Design" bodyText="A seamless experience across every screen, device, and platform."></WhiteCard>
+                <WhiteCard iconClass="code" isLeft={true} headerText="Complex front-ends" bodyText="The kind of work that most teams avoid. That's our specialty."></WhiteCard>
+                <WhiteCard iconClass="infinity" isLeft={false} headerText="Long-term partnerships" bodyText="Our longest client relationship is 5+ years and counting. We stick around."></WhiteCard>
+                <WhiteCard iconClass="rocket" isLeft={true} headerText="Startups" bodyText="We've helped founders go from idea to launch. We know what matters when runway is short and stakes are high."></WhiteCard>
+                <WhiteCard iconClass="community" isLeft={false} headerText="Team integration" bodyText="We've embedded with teams across Europe. Direct communication, no layers — just delivery."></WhiteCard>
+            </div>
+
+            <!-------------------->
+            <!-- HOW WE WORK -->
+            <!-------------------->
+            <div class="who-section">
+                <Badge text={'HOW WE WORK'}></Badge>
+                <h1>What to expect</h1>
+                <div class="who-grid who-grid--stacked">
+                    <div class="who-card">
+                        <h3>Direct access</h3>
+                        <p>You talk to the people writing the code. No layers, no middlemen.</p>
+                    </div>
+                    <div class="who-card">
+                        <h3>Clear scope</h3>
+                        <p>We define exactly what we're building before we start. Defined deliverables, realistic timelines.</p>
+                    </div>
+                    <div class="who-card">
+                        <h3>Consistent updates</h3>
+                        <p>Weekly progress, clear timelines. You always know where things stand.</p>
+                    </div>
+                    <div class="who-card">
+                        <h3>Honest feedback</h3>
+                        <p>We speak up when something doesn't make sense. We're partners, not people-pleasers.</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -520,6 +544,57 @@
             justify-content: center;
             max-width: 1000px;
             margin: 0 auto;
+        }
+
+        .who-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 7rem;
+
+            h1 {
+                margin-bottom: 2.25rem;
+            }
+        }
+
+        .who-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+
+            &.who-grid--stacked {
+                grid-template-columns: 1fr;
+                max-width: 1000px;
+            }
+        }
+
+        .who-card {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 1.75rem;
+            text-align: left;
+            transition: border-color 0.2s, background-color 0.2s;
+
+            &:hover {
+                border-color: rgba(255, 255, 255, 0.3);
+                background-color: rgba(255, 255, 255, 0.03);
+            }
+
+            h3 {
+                color: #fff;
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin: 0 0 0.5rem 0;
+            }
+
+            p {
+                color: #999;
+                font-size: 0.875rem;
+                line-height: 1.5;
+                margin: 0;
+            }
         }
     }
 
@@ -917,6 +992,11 @@
         }
 
         .expertise-grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+        }
+
+        .who-grid {
             grid-template-columns: 1fr;
             max-width: 400px;
         }

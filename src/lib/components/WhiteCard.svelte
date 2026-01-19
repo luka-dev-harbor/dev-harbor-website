@@ -35,7 +35,7 @@
 
         h2 {
             color: #000;
-            margin: 0.75rem 0 0.5rem;
+            margin: 0 0 0.5rem;
             font-size: 1.6rem;
             line-height: 1.3;
             letter-spacing: -0.01em;
@@ -52,7 +52,6 @@
             width: 56px;
             height: 56px;
             background-size: 56px;
-            opacity: 0.7;
         }
     }
 
