@@ -134,7 +134,7 @@
                 <h1>Where we've proven ourselves</h1>
             </div>
             <div class="values-cards">
-                <WhiteCard iconClass="code" isLeft={true} headerText="Complex front-ends" bodyText="The kind of work that most teams avoid. That's our specialty."></WhiteCard>
+                <WhiteCard iconClass="code" isLeft={true} headerText="Challenging projects" bodyText="We take on the work that makes other teams nervous. And we deliver."></WhiteCard>
                 <WhiteCard iconClass="infinity" isLeft={false} headerText="Long-term partnerships" bodyText="Our longest client relationship is 5+ years and counting. We stick around."></WhiteCard>
                 <WhiteCard iconClass="rocket" isLeft={true} headerText="Startups" bodyText="We've helped founders go from idea to launch. We know what matters when runway is short and stakes are high."></WhiteCard>
                 <WhiteCard iconClass="community" isLeft={false} headerText="Team integration" bodyText="We've embedded with teams across Europe. Direct communication, no layers — just delivery."></WhiteCard>
