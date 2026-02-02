@@ -148,12 +148,12 @@
                 <h1>What to expect</h1>
                 <div class="who-grid who-grid--stacked">
                     <div class="who-card">
-                        <h3>Direct access</h3>
-                        <p>You talk to the people writing the code. No layers, no middlemen.</p>
-                    </div>
-                    <div class="who-card">
                         <h3>Clear scope</h3>
                         <p>We define exactly what we're building before we start. Defined deliverables, realistic timelines.</p>
+                    </div>
+                    <div class="who-card">
+                        <h3>Direct access</h3>
+                        <p>Your project has one clear point of contact — directly connected to the team building it.</p>
                     </div>
                     <div class="who-card">
                         <h3>Consistent updates</h3>
